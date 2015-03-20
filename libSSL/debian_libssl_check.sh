@@ -25,7 +25,7 @@ else
   esac
 fi
 
-dpkg --compare-versions $INSTALLED_VERSION gt $FIXED_VERSION
+dpkg --compare-versions $INSTALLED_VERSION ge $FIXED_VERSION
 if [ ! $? -eq 0 ] ; then
   echo Installed is $INSTALLED_VERSION, should be $FIXED_VERSION
   exit 2
