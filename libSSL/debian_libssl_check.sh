@@ -17,11 +17,11 @@ else
   DEBIAN_RELEASE=$(lsb_release -sr | cut -c 1)
   case $DEBIAN_RELEASE in
     6)
-      FIXED_VERSION=2.11.3-4+deb6u4 ;;
+      FIXED_VERSION=0.9.8o-4squeeze20 ;; # Security only
     7)
-      FIXED_VERSION=2.13-38+deb7u7 ;;
+      FIXED_VERSION=1.0.1e-2+deb7u15 ;; # Security only
     8)
-      FIXED_VERSION=2.19-13 ;;
+      FIXED_VERSION=1.0.1k-2 ;; # sid only
   esac
 fi
 
